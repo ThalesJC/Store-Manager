@@ -2,6 +2,7 @@ const productService = require('../services/productService');
 
 const HTTP_STATUS = {
   OK: 200,
+  CREATED: 201,
   NOT_FOUND: 404,
 };
 
@@ -17,7 +18,14 @@ const findProductsById = async (req, res, _next) => {
   res.status(HTTP_STATUS.OK).json(product);
 };
 
+const createProduct = async (req, res, _next) => {
+  const product = req.body;
+  const newProduct = await productService.createProduct(product);
+  res.status(HTTP_STATUS.CREATED).json(newProduct);
+};
+
 module.exports = {
   findAllProducts,
   findProductsById,
+  createProduct,
 };

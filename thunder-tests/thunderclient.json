@@ -26,5 +26,24 @@
     "headers": [],
     "params": [],
     "tests": []
+  },
+  {
+    "_id": "3e383e20-1ece-46e7-8a0e-5f333019f3bf",
+    "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
+    "containerId": "",
+    "name": "new_product",
+    "url": "http://localhost:3000/products",
+    "method": "POST",
+    "sortNum": 30000,
+    "created": "2022-09-12T22:40:57.236Z",
+    "modified": "2022-09-12T22:41:39.686Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"name\": \"produtoX\"\n}",
+      "form": []
+    },
+    "tests": []
   }
 ]

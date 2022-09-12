@@ -3,6 +3,8 @@ const productControler = require('./controllers/productController');
 
 const app = express();
 
+app.use(express.json());
+
 app.get('/', (_request, response) => {
   response.send();
 });
@@ -10,6 +12,8 @@ app.get('/', (_request, response) => {
 app.get('/products', productControler.findAllProducts);
 
 app.get('/products/:id', productControler.findProductsById);
+
+app.post('/products', productControler.createProduct);
 
 // app.use((error, _req, res, _next) => {
 //   if (error.status) return res.status(error.status).json({ message: error.message });
