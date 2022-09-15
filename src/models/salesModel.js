@@ -18,6 +18,23 @@ const registration = async (productsSale) => {
   };
 };
 
+const findAll = async () => {
+  const [result] = await connection.execute(
+    'SELECT * FROM StoreManager.sales;',
+  );
+  return result;
+};
+
+const findId = async (id) => {
+  const [[result]] = await connection.execute(
+    'SELECT * FROM StoreManager.sales WHERE id = ?',
+    [id],
+  );
+  return result;
+};
+
 module.exports = {
   registration,
+  findId,
+  findAll,
 };

@@ -42,8 +42,22 @@ const salesRegistration = async (productsSale) => {
   }
   const newSale = await salesModel.registration(productsSale);
   return { status: 201, response: newSale };
- };
+};
+
+const findAllSales = async () => {
+  const sales = await salesModel.findAll();
+  if (!sales) return { status: 404, response: { message: 'Sale not found' } };
+  return { status: 200, response: sales };
+};
+
+const findSaleById = async (id) => {
+  const sale = await salesModel.findId(id);
+  if (!sale) return { status: 404, response: { message: 'Sale not found' } };
+  return { status: 200, response: sale };
+};
 
 module.exports = {
   salesRegistration,
+  findAllSales,
+  findSaleById,
 };
