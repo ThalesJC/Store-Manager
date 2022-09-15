@@ -18,11 +18,11 @@
     "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
     "containerId": "",
     "name": "find_by_id",
-    "url": "http://localhost:3000/products/10",
+    "url": "http://localhost:3000/products/999",
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-09-12T21:40:21.750Z",
-    "modified": "2022-09-12T22:08:57.964Z",
+    "modified": "2022-09-14T20:41:00.244Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -36,12 +36,31 @@
     "method": "POST",
     "sortNum": 30000,
     "created": "2022-09-12T22:40:57.236Z",
-    "modified": "2022-09-12T23:50:21.404Z",
+    "modified": "2022-09-13T21:42:43.475Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "{\n  \"name\": \"asd\"\n}",
+      "raw": "{\n  \"name\": \"produtoX\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "2d3c752f-5dd0-4a08-bbf5-5a4600d40f4c",
+    "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
+    "containerId": "",
+    "name": "sales_registration",
+    "url": "http://localhost:3000/sales",
+    "method": "POST",
+    "sortNum": 40000,
+    "created": "2022-09-13T18:51:01.818Z",
+    "modified": "2022-09-15T00:30:36.484Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "[\n  {\n    \"productId\":1,\n    \"quantity\": 0\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []
