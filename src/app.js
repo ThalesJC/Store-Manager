@@ -20,7 +20,7 @@ app.post('/sales', salesController.salesRegistration);
 
 app.get('/sales', salesController.findAllSales);
 
-app.get('/sales/:id', salesController.findSalesById);
+app.get('/sales/:id', salesController.findSaleById);
 
 // app.use((error, _req, res, _next) => {
 //   if (error.status) return res.status(error.status).json({ message: error.message });

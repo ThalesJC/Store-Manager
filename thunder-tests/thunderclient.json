@@ -55,12 +55,12 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2022-09-13T18:51:01.818Z",
-    "modified": "2022-09-15T00:30:36.484Z",
+    "modified": "2022-09-15T21:49:33.392Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "[\n  {\n    \"productId\":1,\n    \"quantity\": 0\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
+      "raw": "[\n  {\n    \"productId\":7,\n    \"quantity\": 3\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []
@@ -84,11 +84,11 @@
     "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
     "containerId": "",
     "name": "find_sale_by_id",
-    "url": "http://localhost:3000/sales/2",
+    "url": "http://localhost:3000/sales/1",
     "method": "GET",
     "sortNum": 60000,
     "created": "2022-09-15T00:45:50.794Z",
-    "modified": "2022-09-15T00:59:54.996Z",
+    "modified": "2022-09-15T22:25:20.685Z",
     "headers": [],
     "params": [],
     "tests": []
