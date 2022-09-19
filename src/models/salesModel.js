@@ -30,13 +30,14 @@ const findAll = async () => {
 };
 
 const findId = async (id) => {
-  const [[result]] = await connection.execute(
+  const [result] = await connection.execute(
     `SELECT S.date, SP.product_id, SP.quantity
       FROM StoreManager.sales_products AS SP
       INNER JOIN StoreManager.sales AS S
       ON SP.sale_id = S.id WHERE S.id = ?`,
     [id],
   );
+  console.log(result);
   return toCamel(result);
 };
 

@@ -18,11 +18,11 @@
     "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
     "containerId": "",
     "name": "find_by_id",
-    "url": "http://localhost:3000/products/999",
+    "url": "http://localhost:3000/products/2",
     "method": "GET",
     "sortNum": 20000,
     "created": "2022-09-12T21:40:21.750Z",
-    "modified": "2022-09-14T20:41:00.244Z",
+    "modified": "2022-09-17T21:23:30.770Z",
     "headers": [],
     "params": [],
     "tests": []
@@ -55,12 +55,12 @@
     "method": "POST",
     "sortNum": 40000,
     "created": "2022-09-13T18:51:01.818Z",
-    "modified": "2022-09-15T21:49:33.392Z",
+    "modified": "2022-09-16T22:01:37.314Z",
     "headers": [],
     "params": [],
     "body": {
       "type": "json",
-      "raw": "[\n  {\n    \"productId\":7,\n    \"quantity\": 3\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
+      "raw": "[\n  {\n    \"productId\":1,\n    \"quantity\": 3\n  },\n  {\n    \"productId\": 2,\n    \"quantity\": 5\n  }\n]",
       "form": []
     },
     "tests": []
@@ -84,11 +84,11 @@
     "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
     "containerId": "",
     "name": "find_sale_by_id",
-    "url": "http://localhost:3000/sales/1",
+    "url": "http://localhost:3000/sales/10",
     "method": "GET",
     "sortNum": 60000,
     "created": "2022-09-15T00:45:50.794Z",
-    "modified": "2022-09-15T22:25:20.685Z",
+    "modified": "2022-09-19T15:05:01.371Z",
     "headers": [],
     "params": [],
     "tests": []
