@@ -22,7 +22,7 @@ describe('Testa a camada services de vendas', async () => {
   });
 
   it('Registra uma nova venda', async () => {
-    sinon.stub(salesModel, 'registration').resolves([{ insertId: 3 }]);
+    sinon.stub(salesModel, 'registration').resolves(3);
     const result = await salesService.salesRegistration(newSale);
 
     chai.expect(result).to.be.deep.equal(newSaleReturn);

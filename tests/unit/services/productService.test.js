@@ -29,6 +29,7 @@ describe('Teste da camada service de produtos', async () => {
   it('Cadastra um novo produto', async () => {
     sinon.stub(productModel, 'create').resolves([{ insertId: 4 }]);
     const result = await productService.createProduct(newProduct);
+    console.log(result);
 
     chai.expect(result).to.be.deep.equal(newProductMock);
   });

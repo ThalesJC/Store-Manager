@@ -37,7 +37,6 @@ const findId = async (id) => {
       ON SP.sale_id = S.id WHERE S.id = ?`,
     [id],
   );
-  console.log(result);
   return toCamel(result);
 };
 
