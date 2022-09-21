@@ -8,9 +8,7 @@ const newProductReturn = require("../mocks/newProduct.mock");
 const newProduct = { name: "produtoX" };
 
 describe('teste da camada model de produtos', async () => {
-  afterEach(() => {
-    sinon.restore();
-  });
+  afterEach(sinon.restore);
   
   it('Encontra todos os produtos', async () => {
     sinon.stub(connection, 'execute').resolves([productsMock]);

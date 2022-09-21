@@ -17,9 +17,7 @@ const newSale = [
 ];
 
 describe('Teste da camada model de vendas', async () => {
-  afterEach(() => {
-    sinon.restore();
-  });
+  afterEach(sinon.restore);
 
   it('Registra uma nova venda', async () => {
     sinon.stub(connection, 'execute').resolves([{ insertId: 3 }]);
@@ -36,9 +34,9 @@ describe('Teste da camada model de vendas', async () => {
   });
 
   it('Encontra uma venda com determinado "Id"', async () => {
-    sinon.stub(connection, 'execute').resolves([sales]);
-    const result = await salesModel.findId(3);
+    sinon.stub(connection, 'execute').resolves([[sales]]);
+    const result = await salesModel.findId(2);
 
-    chai.expect(result).to.have.length(2);
+    chai.expect(result).to.have.length(1);
   });
 });

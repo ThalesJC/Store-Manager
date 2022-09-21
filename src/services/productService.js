@@ -27,7 +27,6 @@ const createProduct = async (product) => {
     };
   }
   const newProduct = await productModel.create(product);
-  console.log(newProduct);
   return newProduct;
 };
 

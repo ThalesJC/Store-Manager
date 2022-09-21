@@ -84,11 +84,11 @@
     "colId": "f034ef68-dac0-4161-8922-5250ff005b00",
     "containerId": "",
     "name": "find_sale_by_id",
-    "url": "http://localhost:3000/sales/3",
+    "url": "http://localhost:3000/sales/2",
     "method": "GET",
     "sortNum": 60000,
     "created": "2022-09-15T00:45:50.794Z",
-    "modified": "2022-09-20T01:01:43.499Z",
+    "modified": "2022-09-21T01:37:51.753Z",
     "headers": [],
     "params": [],
     "tests": []
