@@ -26,8 +26,33 @@ const create = async ({ name }) => {
   };
 };
 
+const update = async (name, id) => {
+  const product = await findId(id);
+  if (!product) {
+    return { status: 404, message: 'Product not found' };
+  }
+  const [result] = await connection.execute(
+    `UPDATE StoreManager.products
+    SET name = ? WHERE id = ?`,
+    [name, id],
+  );
+  return {
+    id: result.insertId,
+    name,
+  };
+};
+
+const delet3 = async (id) => {
+  await connection.execute(`
+  DELETE FROM StoreManager.products
+  WHERE id = ?
+  `, [id]);
+};
+
 module.exports = {
   findAll,
   findId,
   create,
+  update,
+  delet3,
 };

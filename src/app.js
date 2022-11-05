@@ -16,15 +16,14 @@ app.get('/products/:id', productController.findProductsById);
 
 app.post('/products', productController.createProduct);
 
+app.put('/products/:id', productController.updateProduct);
+
+app.delete('/products/:id', productController.deleteProduct);
+
 app.post('/sales', salesController.salesRegistration);
 
 app.get('/sales', salesController.findAllSales);
 
 app.get('/sales/:id', salesController.findSaleById);
-
-// app.use((error, _req, res, _next) => {
-//   if (error.status) return res.status(error.status).json({ message: error.message });
-//   return res.status(500).json({ message: error.message });
-// });
 
 module.exports = app;

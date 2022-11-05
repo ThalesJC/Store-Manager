@@ -30,8 +30,19 @@ const createProduct = async (product) => {
   return newProduct;
 };
 
+const updateProduct = async (name, id) => {
+  const result = await productModel.update(name, id);
+  return result;
+};
+
+const deleteProduct = async (id) => {
+  await productModel.delet3(id);
+};
+
 module.exports = {
   findAllProducts,
   findProductsById,
   createProduct,
+  updateProduct,
+  deleteProduct,
 };

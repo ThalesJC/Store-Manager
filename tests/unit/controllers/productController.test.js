@@ -26,7 +26,7 @@ describe('Teste da camada controller de produtos', async () => {
   it('Busca um produto com um determinado "Id"', async () => {
     const req = { params: { id: 2 } };
     const res = {};
-    
+  
     res.status = sinon.stub().returns(res);
     res.json = sinon.stub().returns();
 
